@@ -155,11 +155,8 @@ Contributions welcome! Please:
 
 ## License
 
-Licensed under either of:
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE))
+Licensed under:
 - MIT License ([LICENSE-MIT](LICENSE-MIT))
-
-at your option.
 
 ## Acknowledgments
 

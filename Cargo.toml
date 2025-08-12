@@ -1,0 +1,23 @@
+[package]
+name = "discord-capture-limiter"
+version = "0.1.0"
+edition = "2025"
+description = "Automatically mutes duplicate Discord capture streams in PipeWire"
+authors = ["Fredrik Nordhammer <fredrik@nordhammer.it>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ediblerope/discord-capture-limiter"
+keywords = ["pipewire", "audio", "discord"]
+categories = ["multimedia::audio"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"

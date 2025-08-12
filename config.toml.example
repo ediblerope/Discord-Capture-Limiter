@@ -1,0 +1,13 @@
+# Discord Capture Limiter Configuration
+# Place this file at ~/.config/discord-capture-limiter/config.toml
+
+# The node name to monitor for multiple instances
+# This should match the node.name from pw-cli output
+target_node_name = "discord_capture"
+
+# Logging level: error, warn, info, debug, trace  
+log_level = "info"
+
+# How often to check for stream changes (milliseconds)
+# Lower values = more responsive but higher CPU usage
+check_interval_ms = 1000
